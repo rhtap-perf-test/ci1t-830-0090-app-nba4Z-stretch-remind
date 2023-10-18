@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-orcp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0090-tenant/ci1t-830-0090-app/devfile-sample-orcp@sha256:46f43ca9f48cc10aba2fb41093f7fa338d073374abeee28362efbf1ac31be046
+        name: my-nodejs
+        resources: {}
+status: {}
